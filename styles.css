@@ -1,0 +1,672 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+/*--------還原語法開始-------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*--------還原語法結束-------*/
+
+/*通用樣式start*/
+
+* {
+    font-family: 'Noto Sans TC';
+    font-size: 16px;
+    /*border: 1px solid red;*/
+}
+
+body{
+    background-color: #1e1e1e;
+}
+
+.br-16{
+    border-radius: 16px;
+}
+
+
+
+.font-white {
+    color: #fff;
+}
+
+
+
+.font-32px-bold{
+    color: #fff;
+    font-size:32px;
+    font-weight: bold;
+}
+
+
+.font-16px{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.font-14px{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+/*清單*/
+.ls-none{
+    list-style: none;
+}
+/*按鈕*/
+.start-btn{
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 16px;
+    border: 1px solid #fff;
+    padding: 8px 24px;
+    color: #fff;
+    display: inline-block;
+    margin: 40px;
+
+}
+
+.start-btn:hover{
+    color: #1e1e1e;
+    background-color: #fff;
+}
+
+
+.full-page-flex{
+    display: flex;
+    max-width:1296px;
+    margin:  0 auto;
+}
+
+
+.mgb-0{
+    margin-bottom: 0;
+}
+.mgb-80{
+    margin-bottom: 80px;
+}
+
+.mgb-160{
+    margin-bottom: 160px;
+}
+
+
+
+.mgt-0{
+    margin-top: 0;
+}
+.mgt-80{
+    margin-top: 80px;
+}
+
+.mgt-160{
+    margin-top: 160px;
+}
+
+
+/*通用樣式end*/
+
+/*header start*/
+
+.header-container{
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    border-bottom: 1px solid #fff;
+} 
+
+.header-container__nav a{
+    color: #fff;
+    display: inline-block;
+    margin: 10px;
+    margin-right: 0;
+} 
+
+.logo{
+    height: 40px;
+}
+
+
+/*宣傳頁 start*/
+
+.promote-container {
+    position: relative;   
+}
+
+.promote-container__slogan h1{
+    font-size: 120px;
+    font-weight: 900 ;
+    margin: 0; 
+    line-height: 1.2;
+}
+
+
+.promote-container__slogan{
+    display: block;
+    right: 0;
+    padding-bottom: 200px;
+}
+
+
+.promote-container__btn-custom{
+    margin-left: 0;
+}
+
+.promote-container__deco{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden; 
+}
+
+.promote-container__deco img{
+    width: 160px;
+    height: auto;
+}
+
+/*宣傳頁 end*/
+/*服務介紹 start*/
+.intro-container{
+    margin-bottom: 160px;
+}
+.intro-container_content{
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.intro-container_card-container{
+    justify-content: space-between;
+}
+.intro-container__title{
+    max-width: 414px;
+}
+
+.intro-container__feature{
+    max-width: 856px;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.2;
+
+}
+/*card*/
+.intro-container__card-container{
+    display: flex;
+    justify-content: space-between;
+}
+.intro-container__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: calc(33.33% - 16px); 
+    border-radius: 16px;
+    border: 1px solid #fff;
+    padding: 16px;
+}
+
+.intro-container__card img{
+    width: 80px;
+    height: 80px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.intro-container__card h4{
+    font-weight: 400;
+    font-size:32px;
+    margin-bottom: 20px;
+}
+
+.intro-container__card p{
+    font-weight: 400;
+    margin-bottom: 80px;
+}
+
+/*服務介紹 end*/
+
+
+
+
+/*---合作企業 start---*/
+
+
+.enterprise-container__img-container{
+    margin-top: 60px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.enterprise-container__img-container {
+    position: relative;
+}
+
+.enterprise-container__img-container::before,
+.enterprise-container__img-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%; 
+    pointer-events: none; 
+}
+
+.enterprise-container__img-container::before {
+    left: 0;
+    background: linear-gradient(to right, #1e1e1e 0%, transparent 40%);
+}
+
+.enterprise-container__img-container::after {
+    right: 0;
+    background: linear-gradient(to left, #1e1e1e 0%, transparent 40%);
+}
+
+
+/*---合作企業口碑推薦 start---*/
+
+
+.enterprise-container__card-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 160px;
+    
+
+}
+
+.enterprise-container__review-card p.inner-text{
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+
+.enterprise-container__review-card{
+    background: rgba(255, 255, 255, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(33.33% - 16px);
+    padding: 40px;
+    
+}
+
+
+
+.enterprise-container__card__reviewer-info{
+    display: inline-block;
+}
+
+
+
+
+.star .fa-star {
+    margin-bottom: 22px;
+}
+
+
+
+
+/*---合作企業口碑推薦 end---*/
+
+.img-row1 img, .img-row2 img{
+    width: 160px;
+}
+
+
+/*---合作企業 end---*/
+
+
+
+
+
+
+
+/*卡片區域 start*/
+.container{
+    background-color: #fff;
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items:center;
+    border-radius: 160px;
+}
+
+
+.container__h1{
+    font-size: 80px;
+    font-weight: 900;
+
+    margin: 160px auto 0;
+    display: block;
+    margin-bottom: 80px;
+
+}
+.input-container{
+    width:100%;
+    max-width:1296px;
+    margin:0 auto;
+    position: relative;
+    margin-bottom: 36px;
+
+}
+.input-container__search-bar{
+    width:100%;
+    padding:  20px 82px;
+    font-size: 16px;
+    border: none;
+    background-color: #f2f2f2;
+    transition: background-color 0.3s ease;
+
+}
+.icon-input{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    margin-right: 10px;
+    margin-left: 42px;
+
+}
+
+.input-container__search-bar:focus{
+    background-color: #e6e6e6;
+    outline:none;
+}
+
+.input-container__search-bar:hover{
+    background-color: #e6e6e6;
+}
+
+
+/*搜尋欄位*/
+.select-container{
+    width:100%;
+    max-width: 1296px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.select-container__select-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.select-container__select-list li a{
+    background-color: #fff;
+    padding: 8px 16px;
+    margin:0 4px;
+    border-radius: 16px;
+    color: #919191;
+}
+.select-container__select-list li a:hover{
+    background-color: #f2f2f2;
+    color: black;
+    font-weight: 700;
+}
+.select-box{
+    background-color: #fff;
+    padding:20px 40px;
+    display: flex;
+    border: solid 1px #f2f2f2;
+}
+
+.select-date-icon, .select-name-icon{
+    margin-left:1rem;
+}
+
+/*搜尋欄位*/
+
+/*--------卡片區塊-------*/
+.card-container{    
+    color: #020202;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    max-width: 1296px;
+}
+
+.card-container a{
+    color: #020202;
+}
+
+.card{
+    width:416px;
+        /*border: 1px solid #F2F2F2;*/
+    border-radius: 16px;
+    overflow: hidden;
+    box-sizing:border-box;
+    border: 1px solid rgba(242, 242, 242, 1);  
+    margin-bottom:20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__img{
+    width: 100%;
+    height:312px;
+    margin-bottom:20px;
+    overflow:hidden;
+}
+
+.card__img img {
+    display: block;
+    transition:transform 0.2s ease-in-out;
+}
+
+.card__img:hover img {
+    transform: scale(1.2);
+}
+
+
+.card__text-title{
+    box-shadow: 0 1px 0 rgba(242, 242, 242, 1);
+    margin-bottom:20px;
+    height: 100px;
+
+}
+.card__text-title h1,.card__text-title p {
+    margin:0;
+    margin-left:32px;
+    margin-right:32px;
+    margin-bottom:12px;
+}
+
+.card__text-title h1{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 120%;
+}
+
+.card__text-title p {
+    color:#525252;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 20px;
+}
+
+.card__model-name{
+    margin-bottom:20px;
+    display:flex;
+    justify-content: space-between;
+    box-shadow: 0 1px 0 rgba(242, 242, 242, 1);
+    padding-bottom:20px;
+    margin-top: auto;
+}
+
+.card__model-name h2 {
+    margin-left:32px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+
+.card__model-name a {
+    margin-right:32px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    padding:0;
+    display:inline-block;
+}
+
+.card__hashtag{
+    margin-left:32px;
+    margin-right:32px;
+    margin-bottom:20px;
+    display:flex;
+    justify-content: space-between; 
+    margin-top: auto;
+}
+
+.card__hashtag__text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.card__hashtag__icon{
+    width:18px;
+    height:18px;
+    background-image:url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/icons/share.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+/*--------卡片區塊-------*/
+/*--------頁數-------*/
+.page-number-container{
+    width:100%;
+    max-width: 1296px;
+    margin-bottom: 162px;
+    justify-content: flex-end;
+    
+}
+
+.page-number-container__page-list{
+    display: flex;
+    flex-wrap: wrap ;
+        
+}
+
+.page-number-container__page-list li a{
+    background-color: #fff;
+    width:48px;
+    height: 48px;
+    line-height: 48px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 16px;
+}
+.page-number-container__page-list li a:hover{
+    color:#fff;
+    background-color: black;
+}
+
+/*--------頁數-------*/
+
+
+
+
+/*CTA start*/
+
+.cta-container{
+    margin-top: 158px;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.cta-container__slogan{
+    font-size: 48px !important;
+    font-weight: 900;
+}
+
+/*CTA end*/
+
+
+.view-container__text div{
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 1.2;
+
+}
+
+
+/*首頁定價 start*/
+.view-container {
+    justify-content: space-between;
+    margin-bottom: 80px;
+    border-top: 1px solid #fff;
+}
+
+
+.view-container__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin:  80px 0;
+}
+
+/*首頁定價 end*/
+/*footer*/
+.footer-container {
+    height: 60px;
+    align-items: center;
+    border-top: 1px solid #fff;
+    justify-content: space-between;
+}
+
+.row-list{
+    display: flex;
+    list-style: none;
+}
+
+.footer-container__align{
+    display: flex;
+    align-items: center;
+}
+
+.footer-container__social-list{
+    margin-left: 100px;
+}
+
+
+.footer-container__social-list li {
+    margin: 10px;
+}
+
+/*footer*/
+
+
+
